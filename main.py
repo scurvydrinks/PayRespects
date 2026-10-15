@@ -37,8 +37,6 @@ _status_task_started = False
 
 
 async def rotate_status():
-    # Alternates a random sentence and the server count, ten seconds each.
-    # The count is read fresh every time that turn comes round.
     await client.wait_until_ready()
     show_sentence = True
     while not client.is_closed():
